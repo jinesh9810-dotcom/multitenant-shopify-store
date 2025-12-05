@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: multitenant-shopify-backend
+    env: node
+    plan: starter
+    buildCommand: "npm install"
+    startCommand: "npm start"
