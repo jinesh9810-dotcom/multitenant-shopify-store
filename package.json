@@ -1,21 +1,17 @@
 {
-  "name": "multitenant-shopify-store-backend",
+  "name": "multitenant-shopify-store-frontend",
   "version": "1.0.0",
-  "main": "src/index.js",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "migrate": "prisma migrate deploy"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
+    "next": "14.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "axios": "^1.6.7",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "cron": "^2.4.4",
-    "dotenv": "^16.3.2",
-    "express": "^4.18.3",
-    "prisma": "^5.7.0",
-    "@prisma/client": "^5.7.0"
+    "recharts": "^2.8.0"
   }
 }
